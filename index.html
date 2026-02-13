@@ -473,10 +473,7 @@
         </div>
       </div>
 
-      <!-- Sound Effect -->
-      <audio id="clickSound" preload="auto">
-        <source src="https://www.soundjay.com/buttons/sounds/button-16.mp3" type="audio/mpeg">
-      </audio>
+     
 
       <script>
         const quotes = [
@@ -491,14 +488,9 @@
 
         const quoteText = document.getElementById("quoteText");
         const modal = document.getElementById("quoteModal");
-        const clickSound = document.getElementById("clickSound");
         const downloadBtn = document.getElementById("downloadBtn");
 
-        // Play sound and bounce on click
-        downloadBtn.addEventListener("click", function () {
-          clickSound.play();
-          this.classList.add("bounce");
-
+        
           // Download logic
           const link = document.createElement('a');
           link.href = 'Gokulraj-Resume.pdf';
